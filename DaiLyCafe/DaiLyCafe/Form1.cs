@@ -16,8 +16,7 @@ namespace DaiLyCafe
     {
         public Form1()
         {
-            InitializeComponent();
-            //InitializeDataGridViews();
+            InitializeComponent();            
             CafeDataGridViews();
             PhanBonDataGridViews();
         }
@@ -152,7 +151,7 @@ namespace DaiLyCafe
 
             DataGridViewTextBoxColumn thanhTienColumn = new DataGridViewTextBoxColumn();
             thanhTienColumn.HeaderText = "Thành\ntiền";
-            thanhTienColumn.Width = 60;
+            thanhTienColumn.Width = 100;
             PhanBonDataGridView.Columns.Add(thanhTienColumn);
 
             DataGridViewTextBoxColumn ghiChuColumn = new DataGridViewTextBoxColumn();
