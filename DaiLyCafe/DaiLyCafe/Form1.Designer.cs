@@ -103,6 +103,7 @@
             this.quảnLýHộGiaĐìnhToolStripMenuItem.Name = "quảnLýHộGiaĐìnhToolStripMenuItem";
             this.quảnLýHộGiaĐìnhToolStripMenuItem.Size = new System.Drawing.Size(123, 20);
             this.quảnLýHộGiaĐìnhToolStripMenuItem.Text = "Quản lý hộ gia đình";
+            this.quảnLýHộGiaĐìnhToolStripMenuItem.Click += new System.EventHandler(this.ManagerGiaDinhToolStripMenuItem_Click);
             // 
             // thôngTinPhầnMềmToolStripMenuItem
             // 

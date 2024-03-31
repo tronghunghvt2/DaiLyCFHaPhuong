@@ -17,8 +17,11 @@ namespace DaiLyCafe
     {
         public Form1()
         {
-            InitializeComponent();            
-            PhanBonDataGridViews(); 
+            InitializeComponent();
+            Title();
+            KhungCafe();
+            KhungTieu();
+            KhungPhanBon();
             this.FormBorderStyle = FormBorderStyle.FixedDialog;            
         }
 
@@ -27,8 +30,11 @@ namespace DaiLyCafe
         private void homeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Controls.Clear();
-            InitializeComponent();        
-            PhanBonDataGridViews();
+            InitializeComponent();
+            Title();
+            KhungCafe();
+            KhungTieu();
+            KhungPhanBon();
         }
 
         //CafeClick
@@ -55,6 +61,14 @@ namespace DaiLyCafe
             Controls.Clear();
             InitializeComponent();
             PhanBonDataGridViews();
+        }
+
+        private void ManagerGiaDinhToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Controls.Clear();
+            InitializeComponent();
+            ViewHoGiaDinh();
+            ChiTietHoGiaDinh();
         }
     }
 }
