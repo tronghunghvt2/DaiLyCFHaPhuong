@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\DaiLyCaFe\\DaiLyCFHaPhuong\\DaiLyCafe\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{776C5F0B-56C7-4962-A8AE-6AB7DB8106B0}|DaiLyCafe\\DaiLyCafe.csproj|d:\\dailycafe\\dailycfhaphuong\\dailycafe\\dailycafe\\formmenu\\cafetripmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{776C5F0B-56C7-4962-A8AE-6AB7DB8106B0}|DaiLyCafe\\DaiLyCafe.csproj|solutionrelative:dailycafe\\formmenu\\cafetripmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{776C5F0B-56C7-4962-A8AE-6AB7DB8106B0}|DaiLyCafe\\DaiLyCafe.csproj|d:\\dailycafe\\dailycfhaphuong\\dailycafe\\dailycafe\\formmenu\\phanbontripmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{776C5F0B-56C7-4962-A8AE-6AB7DB8106B0}|DaiLyCafe\\DaiLyCafe.csproj|solutionrelative:dailycafe\\formmenu\\phanbontripmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{776C5F0B-56C7-4962-A8AE-6AB7DB8106B0}|DaiLyCafe\\DaiLyCafe.csproj|D:\\DaiLyCaFe\\DaiLyCFHaPhuong\\DaiLyCafe\\dailycafe\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{776C5F0B-56C7-4962-A8AE-6AB7DB8106B0}|DaiLyCafe\\DaiLyCafe.csproj|solutionrelative:dailycafe\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{776C5F0B-56C7-4962-A8AE-6AB7DB8106B0}|DaiLyCafe\\DaiLyCafe.csproj|d:\\dailycafe\\dailycfhaphuong\\dailycafe\\dailycafe\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{776C5F0B-56C7-4962-A8AE-6AB7DB8106B0}|DaiLyCafe\\DaiLyCafe.csproj|solutionrelative:dailycafe\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PhanBonTripMenu.cs",
+              "DocumentMoniker": "D:\\DaiLyCaFe\\DaiLyCFHaPhuong\\DaiLyCafe\\DaiLyCafe\\FormMenu\\PhanBonTripMenu.cs",
+              "RelativeDocumentMoniker": "DaiLyCafe\\FormMenu\\PhanBonTripMenu.cs",
+              "ToolTip": "D:\\DaiLyCaFe\\DaiLyCFHaPhuong\\DaiLyCafe\\DaiLyCafe\\FormMenu\\PhanBonTripMenu.cs",
+              "RelativeToolTip": "DaiLyCafe\\FormMenu\\PhanBonTripMenu.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-29T08:17:13.013Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CafeTripMenu.cs",
+              "DocumentMoniker": "D:\\DaiLyCaFe\\DaiLyCFHaPhuong\\DaiLyCafe\\DaiLyCafe\\FormMenu\\CafeTripMenu.cs",
+              "RelativeDocumentMoniker": "DaiLyCafe\\FormMenu\\CafeTripMenu.cs",
+              "ToolTip": "D:\\DaiLyCaFe\\DaiLyCFHaPhuong\\DaiLyCafe\\DaiLyCafe\\FormMenu\\CafeTripMenu.cs",
+              "RelativeToolTip": "DaiLyCafe\\FormMenu\\CafeTripMenu.cs",
+              "ViewState": "AQIAAA4CAAAAAAAAAAAYwBUCAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-29T06:41:40.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\DaiLyCaFe\\DaiLyCFHaPhuong\\DaiLyCafe\\DaiLyCafe\\Form1.cs",
+              "RelativeDocumentMoniker": "DaiLyCafe\\Form1.cs",
+              "ToolTip": "D:\\DaiLyCaFe\\DaiLyCFHaPhuong\\DaiLyCafe\\DaiLyCafe\\Form1.cs",
+              "RelativeToolTip": "DaiLyCafe\\Form1.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAuwDoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-29T01:00:36.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\DaiLyCaFe\\DaiLyCFHaPhuong\\DaiLyCafe\\DaiLyCafe\\Form1.cs",
+              "RelativeDocumentMoniker": "DaiLyCafe\\Form1.cs",
+              "ToolTip": "D:\\DaiLyCaFe\\DaiLyCFHaPhuong\\DaiLyCafe\\DaiLyCafe\\Form1.cs [Design]",
+              "RelativeToolTip": "DaiLyCafe\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-29T01:00:36.592Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

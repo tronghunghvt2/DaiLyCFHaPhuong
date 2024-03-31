@@ -8,3 +8,13 @@ C:\Users\QUOC\source\repos\DaiLyCafe\DaiLyCafe\obj\Debug\DaiLyCafe.csproj.Genera
 C:\Users\QUOC\source\repos\DaiLyCafe\DaiLyCafe\obj\Debug\DaiLyCafe.csproj.CoreCompileInputs.cache
 C:\Users\QUOC\source\repos\DaiLyCafe\DaiLyCafe\obj\Debug\DaiLyCafe.exe
 C:\Users\QUOC\source\repos\DaiLyCafe\DaiLyCafe\obj\Debug\DaiLyCafe.pdb
+D:\DaiLyCaFe\DaiLyCFHaPhuong\DaiLyCafe\DaiLyCafe\bin\Debug\DaiLyCafe.exe.config
+D:\DaiLyCaFe\DaiLyCFHaPhuong\DaiLyCafe\DaiLyCafe\bin\Debug\DaiLyCafe.exe
+D:\DaiLyCaFe\DaiLyCFHaPhuong\DaiLyCafe\DaiLyCafe\bin\Debug\DaiLyCafe.pdb
+D:\DaiLyCaFe\DaiLyCFHaPhuong\DaiLyCafe\DaiLyCafe\obj\Debug\DaiLyCafe.csproj.AssemblyReference.cache
+D:\DaiLyCaFe\DaiLyCFHaPhuong\DaiLyCafe\DaiLyCafe\obj\Debug\DaiLyCafe.Form1.resources
+D:\DaiLyCaFe\DaiLyCFHaPhuong\DaiLyCafe\DaiLyCafe\obj\Debug\DaiLyCafe.Properties.Resources.resources
+D:\DaiLyCaFe\DaiLyCFHaPhuong\DaiLyCafe\DaiLyCafe\obj\Debug\DaiLyCafe.csproj.GenerateResource.cache
+D:\DaiLyCaFe\DaiLyCFHaPhuong\DaiLyCafe\DaiLyCafe\obj\Debug\DaiLyCafe.csproj.CoreCompileInputs.cache
+D:\DaiLyCaFe\DaiLyCFHaPhuong\DaiLyCafe\DaiLyCafe\obj\Debug\DaiLyCafe.exe
+D:\DaiLyCaFe\DaiLyCFHaPhuong\DaiLyCafe\DaiLyCafe\obj\Debug\DaiLyCafe.pdb
