@@ -16,7 +16,7 @@ namespace DaiLyCafe
             {
                 Text = "QUẢN LÝ HỘ GIA ĐÌNH",
                 Location = new Point(20,40),
-                Size = new Size(500,500),
+                Size = new Size(570,500),
                 Font = new Font(Font.FontFamily, 12, FontStyle.Bold),                
             };
             Controls.Add(HoGiaDinh);
@@ -24,8 +24,8 @@ namespace DaiLyCafe
             DataGridView HoGiaDinhDataGridView = new DataGridView()
             {
                 Font = new Font(Font.FontFamily, 10, FontStyle.Bold),
-                Location = new Point(20, 40),
-                Size = new Size(400, 440),
+                Location = new Point(8, 20),
+                Size = new Size(400, 470),
                 ColumnHeadersHeight = 40,
                 AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None,
             };
@@ -66,6 +66,51 @@ namespace DaiLyCafe
                 column.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter; // Căn lề giữa hàng tiêu đề                
             }
             HoGiaDinhDataGridView.Columns[HoGiaDinhDataGridView.Columns.Count - 1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill; // Fill size DataGridView
+
+            Label ThonLabel = new Label()
+            {
+                Text = "THÔN:",
+                Location = new Point(430, 40),
+                AutoSize = true,
+                Font = new Font(Font.FontFamily, 13, FontStyle.Bold)
+            };
+            HoGiaDinh.Controls.Add(ThonLabel);
+
+            ComboBox ThonComboBox = new ComboBox()
+            {
+                Text = "Thôn 1",
+                Location = new Point(430, 70),
+                Size = new Size(130, 40),
+                Font = new Font(Font.FontFamily, 13, FontStyle.Bold)
+            };
+            HoGiaDinh.Controls.Add(ThonComboBox);
+
+            Label TimKiemLabel = new Label()
+            {
+                Text = "Tìm kiếm:",
+                Location = new Point(430, 130),
+                AutoSize = true,
+                Font = new Font(Font.FontFamily, 13, FontStyle.Bold)
+            };
+            HoGiaDinh.Controls.Add(TimKiemLabel);
+
+            TextBox TimKiemTexBox = new TextBox()
+            {
+                Location = new Point(430, 160),
+                Size = new Size(130,40)
+            };
+            HoGiaDinh.Controls.Add(TimKiemTexBox);
+
+            Button ChonButton = new Button()
+            {
+                Text = "CHỌN",
+                Location = new Point(455, 220),
+                AutoSize = true,
+                Font = new Font(Font.FontFamily, 13, FontStyle.Bold),
+
+            };
+            HoGiaDinh.Controls.Add(ChonButton);
+
         }
 
         private void ChiTietHoGiaDinh()
@@ -73,8 +118,9 @@ namespace DaiLyCafe
             GroupBox ChiTietHoGiaDinhGrB = new GroupBox()
             {
                 Text = "CHI TIẾT HỘ GIA ĐÌNH",
-                Location = new Point(540, 40),
-                Size = new Size(1000, 500),
+                
+                Location = new Point(20, 570),
+                Size = new Size(1330, 415),
                 Font = new Font(Font.FontFamily, 12, FontStyle.Bold),
 
             };
@@ -83,8 +129,8 @@ namespace DaiLyCafe
             DataGridView ChiTietHoGiaDinhDataGridView = new DataGridView()
             {
                 Font = new Font(Font.FontFamily, 10, FontStyle.Bold),
-                Location = new Point(20, 40),
-                Size = new Size(850, 440),
+                Location = new Point(8, 20),
+                Size = new Size(1150, 385),
                 ColumnHeadersHeight = 40,
                 AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None,
             };
@@ -119,6 +165,13 @@ namespace DaiLyCafe
             };
             ChiTietHoGiaDinhDataGridView.Columns.Add(LyDoColumn);
 
+            DataGridViewTextBoxColumn TrongLuongColumn = new DataGridViewTextBoxColumn()
+            {
+                HeaderText = "Trọng lượng",
+                Width = 80,
+            };
+            ChiTietHoGiaDinhDataGridView.Columns.Add(TrongLuongColumn);
+
             DataGridViewTextBoxColumn ThanhTienColumn = new DataGridViewTextBoxColumn()
             {
                 HeaderText = "Thành tiền",
@@ -132,6 +185,13 @@ namespace DaiLyCafe
                 Width = 100,
             };
             ChiTietHoGiaDinhDataGridView.Columns.Add(VaoRaColumn);
+
+            DataGridViewTextBoxColumn NguoiGuiColumn = new DataGridViewTextBoxColumn()
+            {
+                HeaderText = "Người thực hiện",
+                Width = 100,
+            };
+            ChiTietHoGiaDinhDataGridView.Columns.Add(NguoiGuiColumn);
 
             DataGridViewTextBoxColumn GhiChuColumn = new DataGridViewTextBoxColumn()
             {
@@ -156,12 +216,164 @@ namespace DaiLyCafe
             }
             ChiTietHoGiaDinhDataGridView.Columns[ChiTietHoGiaDinhDataGridView.Columns.Count - 1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill; // Fill size DataGridView
 
+            Label DateStartLabel = new Label()
+            {
+                Text = "Từ: ",
+                Location = new Point(1190, 40),
+                Font = new Font(Font.FontFamily, 13, FontStyle.Bold),
+                AutoSize = true,
+            };
+            ChiTietHoGiaDinhGrB.Controls.Add(DateStartLabel);
 
+            DateTimePicker DateStartPicker = new DateTimePicker()
+            {
+                Format = DateTimePickerFormat.Custom,
+                CustomFormat = "dd/MM/yyyy",
+                Size = new Size(120,40),
+                Value = DateTime.Now.AddYears(-1),
+                Location = new Point(1190, 70)
+            };
+            ChiTietHoGiaDinhGrB.Controls.Add(DateStartPicker);
 
-            Label TongTien = new Label()
+            Label DateEndLabel = new Label()
+            {
+                Text = "Đến: ",
+                Location = new Point(1190, 120),
+                Font = new Font(Font.FontFamily, 13, FontStyle.Bold),
+                AutoSize = true,
+            };
+            ChiTietHoGiaDinhGrB.Controls.Add(DateEndLabel);
+
+            DateTimePicker DateEndPicker = new DateTimePicker()
+            {
+                Format = DateTimePickerFormat.Custom,
+                CustomFormat = "dd/MM/yyyy",
+                Size = new Size(120, 40),
+                Value = DateTime.Now,
+                Location = new Point(1190, 150)
+            };
+            ChiTietHoGiaDinhGrB.Controls.Add(DateEndPicker);
+
+            Label TongTienLabel = new Label()
             {
                 Text = "Tổng tiền: ",
+                Location = new Point(1190, 210),
+                Font = new Font(Font.FontFamily, 13, FontStyle.Bold),
+                AutoSize = true,
             };
+            ChiTietHoGiaDinhGrB.Controls.Add(TongTienLabel);
+
+            TextBox TongTienTextBox = new TextBox()
+            {
+                ReadOnly = true,
+                Location = new Point(1190,240),
+                Size = new Size(120,40)
+            };
+            ChiTietHoGiaDinhGrB.Controls.Add(TongTienTextBox);
+
+            Button ChonChiTietHGDButton = new Button()
+            {
+                Text = "CHỌN",
+                Location = new Point(1215, 300),
+                AutoSize = true,
+                Font = new Font(Font.FontFamily, 13, FontStyle.Bold),
+
+            };
+            ChiTietHoGiaDinhGrB.Controls.Add(ChonChiTietHGDButton);
         }
+
+        private void HoGiaDinh()
+        {
+            GroupBox NhapHoGiaDinhGrB = new GroupBox()
+            {
+                Text = "HỘ GIA ĐÌNH",
+                Size = new Size(410,250),
+                Location = new Point(610, 40),
+                Font = new Font(Font.FontFamily, 12, FontStyle.Bold),
+                
+            };
+            Controls.Add(NhapHoGiaDinhGrB);
+
+            Label TenHoGiaDinhLabel = new Label()
+            {
+                Text = "Tên hộ gia đình:",
+                AutoSize = true,
+                Font = new Font(Font.FontFamily, 13, FontStyle.Bold),
+                Location = new Point(20,40)
+            };
+            NhapHoGiaDinhGrB.Controls.Add(TenHoGiaDinhLabel);
+
+            Label ThonHoGiaDinhLabel = new Label()
+            {
+                Text = "Thôn:",
+                AutoSize = true,
+                Font = new Font(Font.FontFamily, 13, FontStyle.Bold),
+                Location = new Point(20, 80)
+            };
+            NhapHoGiaDinhGrB.Controls.Add(ThonHoGiaDinhLabel);
+
+            TextBox TenHoGiaDinhTextBox = new TextBox()
+            {
+                Font = new Font(Font.FontFamily, 13, FontStyle.Bold),
+                Size = new Size(200,40),
+                Location = new Point(200, 40)
+            };
+            NhapHoGiaDinhGrB.Controls.Add(TenHoGiaDinhTextBox);
+
+            TextBox ThonHoGiaDinhTextBox = new TextBox()
+            {
+                Font = new Font(Font.FontFamily, 13, FontStyle.Bold),
+                Size = new Size(200, 40),
+                Location = new Point(200, 80)
+
+            };
+            NhapHoGiaDinhGrB.Controls.Add(ThonHoGiaDinhTextBox);
+            
+
+
+            Button ThemHoGDButton = new Button()
+            {
+                Text = "THÊM",
+                Font = new Font(Font.FontFamily, 13, FontStyle.Bold),
+                AutoSize = true,
+                Location = new Point(20, 120)
+            };
+            NhapHoGiaDinhGrB.Controls.Add(ThemHoGDButton);
+
+            Button SuaHoGDButton = new Button()
+            {
+                Text = "SỬA",
+                Font = new Font(Font.FontFamily, 13, FontStyle.Bold),
+                AutoSize = true,                
+                Location = new Point(120, 120)
+            };
+            NhapHoGiaDinhGrB.Controls.Add(SuaHoGDButton);
+
+            Button XoaHoGDButton = new Button()
+            {
+                Text = "XÓA",
+                Font = new Font(Font.FontFamily, 13, FontStyle.Bold),
+                AutoSize = true,
+                Location = new Point(220,120)
+            };
+            NhapHoGiaDinhGrB.Controls.Add(XoaHoGDButton);
+
+
+        }
+
+        private void ChiTietHoGD()
+        {
+            GroupBox NhapChiTietHoGiaDinhGrB = new GroupBox()
+            {
+                Text = "CHI TIẾT HỘ GIA ĐÌNH",
+                Size = new Size(580, 500),
+                Location = new Point(1040, 40),
+                Font = new Font(Font.FontFamily, 12, FontStyle.Bold),
+
+            };
+            Controls.Add(NhapChiTietHoGiaDinhGrB);
+
+        }
+
     }
 }

@@ -63,12 +63,15 @@ namespace DaiLyCafe
             PhanBonDataGridViews();
         }
 
+        //HoGiaDinhClick
         private void ManagerGiaDinhToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Controls.Clear();
             InitializeComponent();
             ViewHoGiaDinh();
             ChiTietHoGiaDinh();
+            HoGiaDinh();
+            ChiTietHoGD();
         }
     }
 }

@@ -15,18 +15,21 @@ namespace DaiLyCafe
         private void CafeDataGridViews()  
         {
             // Tạo GroupBox để đóng khung các cột
-            System.Windows.Forms.GroupBox groupBox = new System.Windows.Forms.GroupBox();
-            groupBox.Font = new Font(groupBox.Font, FontStyle.Bold); // Thiết lập font in đậm và nghiêng
-            groupBox.Font = new Font(groupBox.Font.FontFamily, 10, FontStyle.Bold); // Thiết lập font in đậm và tăng cỡ chữ
-            groupBox.Text = "Cà phê nhân";
-            groupBox.Location = new Point(20, 380);
-            groupBox.Size = new Size(1000, 600); // Kích thước phù hợp với DataGridView
+            GroupBox groupBox = new GroupBox()
+            {
+                Font = new Font(Font.FontFamily, 10, FontStyle.Bold),
+                Text = "CÀ PHÊ NHÂN",
+                Location = new Point(20, 380),
+                Size = new Size(1000, 600),
+            };
             Controls.Add(groupBox);
 
-            DataGridView CafeDataGridView = new DataGridView();
-            CafeDataGridView.Location = new Point(8, 20);
-            CafeDataGridView.Size = new Size(860, 570); // Kích thước phù hợp với Form
-            groupBox.Controls.Add(CafeDataGridView); // Thêm DataGridView vào GroupBox
+            DataGridView CafeDataGridView = new DataGridView()
+            {
+                Location = new Point(8, 20),
+                Size = new Size(860, 570)
+            };            
+            groupBox.Controls.Add(CafeDataGridView); 
 
             // Thêm các cột vào DataGridView
             DataGridViewTextBoxColumn sttColumn = new DataGridViewTextBoxColumn();
@@ -110,7 +113,7 @@ namespace DaiLyCafe
             Label StartDate = new Label();
             StartDate.Location = new Point(880, 20);
             StartDate.Text = "Từ ngày: ";
-            StartDate.Font = new Font(StartDate.Font, FontStyle.Bold);
+            //StartDate.Font = new Font(StartDate.Font, FontStyle.Bold);
             StartDate.AutoSize = false;
             StartDate.Size = new Size(70, 20); // Kích thước phù hợp
             groupBox.Controls.Add(StartDate);
@@ -127,7 +130,7 @@ namespace DaiLyCafe
             Label EndDate = new Label();
             EndDate.Location = new Point(880, 70);
             EndDate.Text = "Đến ngày: ";
-            EndDate.Font = new Font(StartDate.Font, FontStyle.Bold);
+           // EndDate.Font = new Font(StartDate.Font, FontStyle.Bold);
             EndDate.AutoSize = false;
             EndDate.Size = new Size(70, 20); // Kích thước phù hợp
             groupBox.Controls.Add(EndDate);
@@ -144,7 +147,7 @@ namespace DaiLyCafe
             Label TongKGMua = new Label();
             TongKGMua.Location = new Point(880, 120);
             TongKGMua.Text = "Tổng trọng lượng: ";
-            TongKGMua.Font = new Font(StartDate.Font, FontStyle.Bold);
+            //TongKGMua.Font = new Font(StartDate.Font, FontStyle.Bold);
             TongKGMua.AutoSize = false;
             TongKGMua.Size = new Size(110, 20); // Kích thước phù hợp
             groupBox.Controls.Add(TongKGMua);
@@ -160,7 +163,7 @@ namespace DaiLyCafe
             Label TongTien = new Label();
             TongTien.Location = new Point(880, 170);
             TongTien.Text = "Tổng tiền: ";
-            TongTien.Font = new Font(StartDate.Font, FontStyle.Bold);
+            //TongTien.Font = new Font(StartDate.Font, FontStyle.Bold);
             TongTien.AutoSize = false;
             TongTien.Size = new Size(110, 20); // Kích thước phù hợp
             groupBox.Controls.Add(TongTien);
@@ -187,12 +190,32 @@ namespace DaiLyCafe
             editButton.Text = "CHỌN";
             editButton.AutoSize = true;
             editButton.Font = new Font(editButton.Font.FontFamily, editButton.Font.Size + 5, FontStyle.Bold); 
-            editButton.Location = new Point(880, 220);
+            editButton.Location = new Point(880, 320);
             //editButton.Click += EditCaNhanButton_Click; // Đăng ký sự kiện Click cho Button            
             groupBox.Controls.Add(editButton);
             #endregion
+
+            #region Tim kiem
+            Label TimKiem = new Label()
+            {
+                Text = "Tìm kiếm:",
+                Location = new Point(880, 220),
+                AutoSize = true,
+
+
+            };
+            groupBox.Controls.Add(TimKiem);
+
+            TextBox TimKiemTextBox = new TextBox()
+            {
+                Location = new Point(880, 240),
+                Size = new Size(100, 20),
+
+            };
+            groupBox.Controls.Add(TimKiemTextBox);
+            #endregion
         }
-        
+
         //CafeTuoi
         private void CafeTuoiDataGridViews()
         {
@@ -200,7 +223,7 @@ namespace DaiLyCafe
             System.Windows.Forms.GroupBox groupBox = new System.Windows.Forms.GroupBox();
             groupBox.Font = new Font(groupBox.Font, FontStyle.Bold); // Thiết lập font in đậm
             groupBox.Font = new Font(groupBox.Font.FontFamily, 10, FontStyle.Bold); // Thiết lập font in đậm và tăng cỡ chữ
-            groupBox.Text = "Cà phê tươi";
+            groupBox.Text = "CÀ PHÊ TƯƠI";
             groupBox.Location = new System.Drawing.Point(20, 40);
             groupBox.Size = new System.Drawing.Size(800, 320); // Kích thước phù hợp với DataGridView
             Controls.Add(groupBox);
@@ -368,7 +391,7 @@ namespace DaiLyCafe
             System.Windows.Forms.GroupBox groupBox = new System.Windows.Forms.GroupBox();
             groupBox.Font = new Font(groupBox.Font, FontStyle.Bold); // Thiết lập font in đậm
             groupBox.Font = new Font(groupBox.Font.FontFamily, 10, FontStyle.Bold); // Thiết lập font in đậm và tăng cỡ chữ
-            groupBox.Text = "Cà phê khô";
+            groupBox.Text = "CÀ PHÊ KHÔ";
             groupBox.Location = new System.Drawing.Point(840, 40);
             groupBox.Size = new System.Drawing.Size(800, 320); // Kích thước phù hợp với DataGridView
             Controls.Add(groupBox);
@@ -544,13 +567,19 @@ namespace DaiLyCafe
             LoaiHangLabel.AutoSize = true;
             groupBox.Controls.Add(LoaiHangLabel);
 
-            ComboBox LoaiHangComboBox = new ComboBox();
-            LoaiHangComboBox.Text = "Cà phê nhân";
-            LoaiHangComboBox.Font = new Font(LoaiHangComboBox.Font.FontFamily, 12, FontStyle.Bold);
-            LoaiHangComboBox.AutoSize = false;
-            LoaiHangComboBox.Size = new Size(300, 20);
-            LoaiHangComboBox.Location = new Point(170, 20);
+            ComboBox LoaiHangComboBox = new ComboBox()
+            {
+                Font = new Font(Font.FontFamily, 12, FontStyle.Bold),
+                AutoSize = false,
+                Size = new Size(300, 20),
+                Location = new Point(170, 20),                
+            };
+            LoaiHangComboBox.Items.Add("Cà phê nhân");
+            LoaiHangComboBox.Items.Add("Cà phê tươi");
+            LoaiHangComboBox.Items.Add("Cà phê khô");
             groupBox.Controls.Add(LoaiHangComboBox);
+
+            
 
             Label NguoiBanLabel = new Label();
             NguoiBanLabel.Location = new Point(10, 62);
@@ -568,7 +597,7 @@ namespace DaiLyCafe
 
             Label TrongLuongLabel = new Label();
             TrongLuongLabel.Location = new Point(10, 102);
-            TrongLuongLabel.Text = "Trọng lượng: ";
+            TrongLuongLabel.Text = "Trọng lượng cân: ";
             TrongLuongLabel.Font = new Font(TrongLuongLabel.Font.FontFamily, 12, FontStyle.Bold);
             TrongLuongLabel.AutoSize = true;
             groupBox.Controls.Add(TrongLuongLabel);
@@ -580,19 +609,23 @@ namespace DaiLyCafe
             TrongLuongTextbox.Location = new Point(170, 100);
             groupBox.Controls.Add(TrongLuongTextbox);
 
-            Label DoAmLabel = new Label();
-            DoAmLabel.Location = new Point(10, 142);
-            DoAmLabel.Text = "Độ ẩm: ";
-            DoAmLabel.Font = new Font(DoAmLabel.Font.FontFamily, 12, FontStyle.Bold);
-            DoAmLabel.AutoSize = true;
+            Label DoAmLabel = new Label()
+            {
+                Location = new Point(10, 142),
+                Text = "Độ ẩm: ",
+                Font = new Font(Font.FontFamily, 12, FontStyle.Bold),
+                AutoSize = true
+            };            
             groupBox.Controls.Add(DoAmLabel);
 
-            TextBox DoAmTextbox = new TextBox();
-            DoAmTextbox.Font = new Font(DoAmTextbox.Font.FontFamily, 12, FontStyle.Bold);
-            DoAmTextbox.AutoSize = false;
-            DoAmTextbox.Size = new Size(300, 30);
-            DoAmTextbox.Location = new Point(170, 140);
-            groupBox.Controls.Add(DoAmTextbox);
+            TextBox DoAmTextbox = new TextBox()
+            {
+                Font = new Font(Font.FontFamily, 12, FontStyle.Bold),
+                AutoSize = false,
+                Size = new Size(300, 30),
+                Location = new Point(170, 140)
+            };
+            groupBox.Controls.Add(DoAmTextbox);            
 
             Label TrongLuongEndLabel = new Label();
             TrongLuongEndLabel.Location = new   Point(10, 182);
@@ -666,6 +699,26 @@ namespace DaiLyCafe
             GhiChuTextbox.Location = new Point(170, 340);
             groupBox.Controls.Add(GhiChuTextbox);
 
+            LoaiHangComboBox.SelectedIndexChanged += (sender, e) =>
+            {
+                // Kiểm tra giá trị được chọn trong ComboBox
+                if (LoaiHangComboBox.SelectedItem != null)
+                {
+                    if (LoaiHangComboBox.SelectedItem.ToString() == "Cà phê nhân")
+                    {
+                        TrongLuongTextbox.Enabled = true;
+                        DoAmTextbox.Enabled = true; // Khi chọn Cà phê nhân, cho phép điền vào TextBox
+                    }
+                    else
+                    {
+                        TrongLuongTextbox.Enabled = false;
+                        TrongLuongTextbox.Text = "";
+                        DoAmTextbox.Enabled = false; // Khi chọn các lựa chọn khác, vô hiệu hóa TextBox
+                        DoAmTextbox.Text = ""; // Xóa nội dung của TextBox
+                    }
+                }
+            };
+
             Button Them = new Button();
             Them.Text = "THÊM";
             Them.AutoSize = true;
@@ -708,7 +761,9 @@ namespace DaiLyCafe
             };
             groupBox.Controls.Add(InHoaDon);
 
-        }                           
+        }  
+        
+
 
     }
 
